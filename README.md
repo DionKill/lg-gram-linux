@@ -32,6 +32,9 @@ sudo echo 80 >> /sys/class/power_supply/BAT0/charge_control_end_threshold
 
 On a side note, KDE (probably Cosmic and Gnome as well) allows for a 80% max charge setting, but I have no idea if it actually works or not.
 
+## Performance fixes
+The LG Gram laptops, being very lightweight, suffer from having an insanely small heatsink and very restrictive thermal configuration. By default, whenever the CPU goes above 70°C (even on Windows) it thermal throttles and this means incredibly limited performance. Thankfully it's possible to bypass this by using a custom `thermald` configuration. I already made one that works, and you can just drag and drop it in the `/etc/thermald/` folder.
+
 ## Speakers equalization
 I've made a simple equalizer to make the speakers sound a little bit better (never tried them on Windows, but I'm aware there should be an app for it). Mind the speakers are only 2W powerful so they aren't going to be very loud and you might not hear anything if there is even minor amount of noise in the room.
 
