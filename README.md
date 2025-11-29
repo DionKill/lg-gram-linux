@@ -27,7 +27,7 @@ To do that, change the values using echo or nano or whatever tool you prefer. Th
 
 For instance, here I want to change the battery from 100% to 80% maximum charge:
 ```bash
-sudo echo VALUE >> /sys/class/power_supply/BAT0/charge_control_end_threshold
+sudo echo 80 >> /sys/class/power_supply/BAT0/charge_control_end_threshold
 ```
 
 On a side note, KDE (probably Cosmic and Gnome as well) allows for a 80% max charge setting, but I have no idea if it actually works or not.
