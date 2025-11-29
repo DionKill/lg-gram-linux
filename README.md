@@ -47,6 +47,12 @@ I've made a simple equalizer to make the speakers sound a little bit better (nev
 Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
 
 ## Other oddities
-The BIOS options, when holding the arrow keys down, scroll much slower than on Windows. I have no idea how this is even possible
+### BIOS settings
+You can get into the Advanced section by holding `CTRL+ALT+SHIFT+F7`.
 
+The BIOS options, when holding the arrow keys down, scroll much slower than on Windows. I have no idea how this is even possible.
+
+Also, there's millions of options but only a couple of them stick when rebooting? Most of them just don't, and sometimes they reset for no reason (the Performance tab for Power profiles is one of them. Also it doesn't work, it limits at 25W even when you push it higher).
+
+### Performance
 Other oddities are what I explained in the performance tab. To give more context, games like Genshin Impact (yeah I was playing that at the time don't judge) would drop from 40ish FPS to like... 12? Even lower sometimes. All because of this ridiculously low temperature setting. I've never seen any other computer with such low temperature thresholds. That's just insanely low considering that CPUs can hit even more than 100°C before throttling nowadays.
