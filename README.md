@@ -3,6 +3,9 @@ This repository contains information on how to configure your LG Gram if you pla
 
 This guide is made for the LG Gram 17" 2023, but it should work on all other models with some minor tweaking. I used Fedora (41 and 42), but all should work on other distros too.
 
+# Download the configurations
+Download the configurations from the release page, and unzip the file. You can then modify all the files to your liking, and move them to the folders mentioned below (you need root).
+
 ## Kernel configurations
 As seen [here](https://www.kernel.org/doc/html/latest/admin-guide/laptops/lg-laptop.html), the newer versions of the Linux kernel support a lot of drivers for the laptop.
 
@@ -12,8 +15,6 @@ There are 2 ways of changing these settings: using `rules.d` (and therefore appl
 > I noticed that these settings didn't change on Ubuntu, so the only way to apply them was by using the `rules.d` and rebooting. Which is very annoying. This was in 2024, and things may have changed since then.
 
 ### `rules.d` config
-Download the rules.d folder or by downloading the zip of this entire repo.
-
 Then, Copy the rule.d in there by moving the folder:
 ```bash
 sudo cp rules.d/ /etc/udev/rules.d/
