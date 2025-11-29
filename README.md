@@ -35,4 +35,4 @@ On a side note, KDE (probably Cosmic and Gnome as well) allows for a 80% max cha
 ## Speakers equalization
 I've made a simple equalizer to make the speakers sound a little bit better (never tried them on Windows, but I'm aware there should be an app for it). Mind the speakers are only 2W powerful so they aren't going to be very loud and you might not hear anything if there is even minor amount of noise in the room.
 
-Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo. Then, go to the Pipewire section and enable it only for the internal speakers.
+Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
