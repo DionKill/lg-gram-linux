@@ -33,9 +33,20 @@ sudo echo 80 >> /sys/class/power_supply/BAT0/charge_control_end_threshold
 On a side note, KDE (probably Cosmic and Gnome as well) allows for a 80% max charge setting, but I have no idea if it actually works or not.
 
 ## Performance fixes
-The LG Gram laptops, being very lightweight, suffer from having an insanely small heatsink and very restrictive thermal configuration. By default, whenever the CPU goes above 70°C (even on Windows) it thermal throttles and this means incredibly limited performance. Thankfully it's possible to bypass this by using a custom `thermald` configuration. I already made one that works, and you can just drag and drop it in the `/etc/thermald/` folder.
+The LG Gram laptops, being very lightweight, suffer from having an insanely small heatsink and very restrictive thermal configuration. By default, whenever the CPU goes above 70°C (even on Windows) it thermal throttles and this means incredibly limited performance.
+
+To give you an idea, the laptop could potentially use upwards of 30-35W of power between CPU and iGPU. But when the limiters are in place, it drops all the way down to 12W which makes it incredibly slow even for mundane tasks. It took me months of working on it for hours a day to figure out how to fix it. Insane.
+
+Thankfully it's possible to bypass this by using a custom `thermald` configuration. I already made one that works, and you can just drag and drop it in the `/etc/thermald/` folder.
+
+No your laptop will not explode, Intel has set a maximum operating temperature of 95°C that cannot be exceeded or changed even on the BIOS (it resets at boot). So your laptop will be safe, it will just operate better.
 
 ## Speakers equalization
 I've made a simple equalizer to make the speakers sound a little bit better (never tried them on Windows, but I'm aware there should be an app for it). Mind the speakers are only 2W powerful so they aren't going to be very loud and you might not hear anything if there is even minor amount of noise in the room.
 
 Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
+
+## Other oddities
+The BIOS options, when holding the arrow keys down, scroll much slower than on Windows. I have no idea how this is even possible
+
+Other oddities are what I explained in the performance tab. To give more context, games like Genshin Impact (yeah I was playing that at the time don't judge) would drop from 40ish FPS to like... 12? Even lower sometimes. All because of this ridiculously low temperature setting. I've never seen any other computer with such low temperature thresholds. That's just insanely low considering that CPUs can hit even more than 100°C before throttling nowadays.
