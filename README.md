@@ -47,6 +47,9 @@ I've made a simple equalizer to make the speakers sound a little bit better (nev
 
 Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
 
+## PageUp/Home and PageDown/End keys are the other way around
+They are inverted, and you gotta hold the FN key to use them, which gets in the way when programming. If you want to fix it, I recommend you install an app called Input Remapper on your distro.
+
 ## Other oddities
 ### BIOS settings
 You can get into the Advanced section by holding `CTRL+ALT+SHIFT+F7`.
