@@ -17,7 +17,7 @@ There are 2 ways of changing these settings: using `rules.d` (and therefore appl
 ### `rules.d` config
 Then, Copy the rule.d in there by moving the folder:
 ```bash
-sudo cp rules.d/ /etc/udev/rules.d/
+sudo cp -r /rules.d/ /etc/udev/rules.d/
 ```
 
 Or move them manually in one way or another. You will need root permissions of course.
@@ -30,8 +30,8 @@ For instance, here I want to change the battery from 100% to 80% maximum charge:
 ```bash
 sudo echo 80 >> /sys/class/power_supply/BAT0/charge_control_end_threshold
 ```
-
-On a side note, KDE (probably Cosmic and Gnome as well) allows for a 80% max charge setting, but I have no idea if it actually works or not.
+## Battery capacity
+Even though it can be changed using the rules.d parameter, it looks like KDE (and most likely Cosmic and Gnome as well) can change the maximum capacity without having to rely on those configurations. Go to your battery settings, and modify it from there.
 
 ## Performance fixes
 The LG Gram laptops, being very lightweight, suffer from having an insanely small heatsink and very restrictive thermal configuration. By default, whenever the CPU goes above 70°C (even on Windows) it thermal throttles and this means incredibly limited performance.
