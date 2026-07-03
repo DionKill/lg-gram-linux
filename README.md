@@ -45,7 +45,7 @@ No your laptop will not explode, Intel has set a maximum operating temperature o
 ## Speakers equalization
 I've made a simple equalizer to make the speakers sound a little bit better (never tried them on Windows, but I'm aware there should be an app for it). Mind the speakers are only 2W powerful so they aren't going to be very loud and you might not hear anything if there is even minor amount of noise in the room.
 
-Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
+Just download the EasyEffects app, and configure it by loading the eq profile I've created. Click profiles at the bottom left, then local and click import next to the new profile name text area.
 
 Also, I'd recommend adding an exciter and moving the bar at the left (i don't know what it does but it sounds better). Experiment with it as much as you please.
 
