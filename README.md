@@ -31,7 +31,7 @@ For instance, here I want to change the battery from 100% to 80% maximum charge:
 sudo echo 80 >> /sys/class/power_supply/BAT0/charge_control_end_threshold
 ```
 ## Battery capacity
-Even though it can be changed using the rules.d parameter, it looks like KDE (and most likely Cosmic and Gnome as well) can change the maximum capacity without having to rely on those configurations. Go to your battery settings, and modify it from there.
+It must be changed using the rules.d parameter, because even though KDE (and most likely Cosmic and Gnome as well) can change the maximum capacity, they don't stick at reboot. You must use that rule.d file in order for it to stick at every boot.
 
 ## Performance fixes
 The LG Gram laptops, being very lightweight, suffer from having an insanely small heatsink and very restrictive thermal configuration. By default, whenever the CPU goes above 70°C (even on Windows) it thermal throttles and this means incredibly limited performance.
@@ -47,8 +47,12 @@ I've made a simple equalizer to make the speakers sound a little bit better (nev
 
 Just download the EasyEffects app, and configure it by loading the equalizer preset, the download is in the repo, and import it. Then, go to the Pipewire section and enable it only for the internal speakers. If you hear popping from the speakers, lower the preamp.
 
+Also, I'd recommend adding an exciter and moving the bar at the left (i don't know what it does but it sounds better). Experiment with it as much as you please.
+
 ## PageUp/Home and PageDown/End keys are the other way around
 They are inverted, and you gotta hold the FN key to use them, which gets in the way when programming. If you want to fix it, I recommend you install an app called Input Remapper on your distro.
+
+To do that, create a profile, add a setting and register the input using the record button, then go ahead and type the button name KEY_whatever. You must do home > page up and page up > home of course otherwise you loose access to one of the buttons! Then hit the enable automatically button and you are good to go.
 
 ## Other oddities
 ### BIOS settings
