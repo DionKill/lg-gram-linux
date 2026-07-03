@@ -1,7 +1,7 @@
 # LG Gram laptops on Linux
 This repository contains information on how to configure your LG Gram if you plan on installing Linux, as a lot of things aren't perfect.
 
-This guide is made for the LG Gram 17" 2023, but it should work on all other models with some minor tweaking. I used Fedora (41 and 42), but all should work on other distros too.
+This guide is made for the LG Gram 17" 2023, but it should work on all other models with some minor tweaking. I'm using Fedora (44), but all should work on other distros too.
 
 # Download the configurations
 Download the configurations from the release page, and unzip the file. You can then modify all the files to your liking, and move them to the folders mentioned below (you need root).
